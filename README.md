@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Motos</title>
+    <style>
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #073058, #1b5074);
+            color: #111725;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(77, 120, 201, 0.4);
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .moto {
+            background-color: #2f4b74;
+            color: #000000;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(136, 141, 214, 0.2);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .moto:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .moto img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .moto h2 {
+            font-size: 20px;
+            padding: 15px;
+            margin: 0;
+            border-top: 1px solid #0b1b38;
+            background-color: #2f3a61;
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .moto {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Galería de Motos</h1>
+    <div class="galeria">
+        <div class="moto">
+            <img src="d:\usuarios\alumno\descargas\yamaha r1.jpg" alt="Yamaha R1">
+            <h2>Yamaha R1</h2>
+        </div>
+        <div class="moto">
+            <img src="d:\usuarios\alumno\descargas\Honda cbr600rr.jpg" alt="Honda CBR600RR">
+            <h2>Honda CBR600RR</h2>
+        </div>
+        <div class="moto">
+            <img src="d:\usuarios\alumno\descargas\ninja h2 sx se.jpg" alt="Kawasaki Ninja H2">
+            <h2>Kawasaki Ninja H2</h2>
+        </div>
+        <div class="moto">
+            <img src="d:\usuarios\alumno\descargas\bmw s 1000 rr.jpg" alt="BMW S1000RR">
+            <h2>BMW S1000RR</h2>
+        </div>
+        <div class="moto">
+            <img src="d:\usuarios\alumno\descargas\panigale v4.jpg" alt="Ducati Panigale V4">
+            <h2>Ducati Panigale V4</h2>
+        </div>
+    </div>
+</body>
+</html>
